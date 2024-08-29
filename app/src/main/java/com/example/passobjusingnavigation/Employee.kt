@@ -3,10 +3,10 @@ package com.example.passobjusingnavigation
 import java.io.Serializable
 
 data class Employee(
-    val name: String,
-    val title: String,
-    val email: String,
-    val phone: String,
-    val address: String,
-    val salary: String,
-    ): Serializable
+    val name: String = "John Doe",
+    val title: String = "Software Engineer",
+    val email: String = "john.mclean@examplepetstore.com",
+    val phone: String = "0123456789",
+    val address: String = "Dhaka, Bangladesh",
+    val salary: String = "50000"
+): Serializable

@@ -18,5 +18,12 @@
         android:id="@+id/employeeDetailsFragment"
         android:name="com.example.passobjusingnavigation.EmployeeDetailsFragment"
         android:label="fragment_employee_details"
-        tools:layout="@layout/fragment_employee_details" />
+        tools:layout="@layout/fragment_employee_details" >
+        <action
+            android:id="@+id/action_employeeDetailsFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+        <argument
+            android:name="data"
+            app:argType="com.example.passobjusingnavigation.Employee" />
+    </fragment>
 </navigation>
