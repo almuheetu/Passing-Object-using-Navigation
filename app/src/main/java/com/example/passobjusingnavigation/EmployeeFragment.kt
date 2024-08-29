@@ -11,13 +11,8 @@ import com.example.passobjusingnavigation.databinding.FragmentEmployeeBinding
 
 class EmployeeFragment : Fragment() {
     private lateinit var binding: FragmentEmployeeBinding
+    private lateinit var employeeList: List<Employee>
     private lateinit var employee: Employee
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,7 +28,8 @@ class EmployeeFragment : Fragment() {
         binding.employeeName.text = employee.name
         binding.employeeTitle.text = employee.title
         binding.button.setOnClickListener {
-            val action = EmployeeFragmentDirections.actionEmployeeFragmentToEmployeeDetailsFragment(employee)
+            val action =
+                EmployeeFragmentDirections.actionEmployeeFragmentToEmployeeDetailsFragment(employee)
             findNavController().navigate(action)
         }
     }

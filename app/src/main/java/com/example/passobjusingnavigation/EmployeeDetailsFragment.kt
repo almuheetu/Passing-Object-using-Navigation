@@ -39,7 +39,9 @@ class EmployeeDetailsFragment : Fragment() {
 
 
         binding.button2.setOnClickListener {
-            findNavController().navigate(R.id.action_employeeDetailsFragment_to_employeeFragment)
+            val action =
+                EmployeeDetailsFragmentDirections.actionEmployeeDetailsFragmentToEmployeeFragment()
+            findNavController().navigate(action)
         }
 
     }
