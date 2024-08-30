@@ -10,3 +10,4 @@ data class Employee(
     val address: String = "Dhaka, Bangladesh",
     val salary: String = "50000"
 ): Serializable
+

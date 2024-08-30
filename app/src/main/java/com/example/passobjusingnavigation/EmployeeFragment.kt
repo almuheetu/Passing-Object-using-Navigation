@@ -11,7 +11,6 @@ import com.example.passobjusingnavigation.databinding.FragmentEmployeeBinding
 
 class EmployeeFragment : Fragment() {
     private lateinit var binding: FragmentEmployeeBinding
-    private lateinit var employeeList: List<Employee>
     private lateinit var employee: Employee
 
     override fun onCreateView(
